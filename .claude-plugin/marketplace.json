@@ -1,0 +1,21 @@
+{
+  "name": "ai-coding-marketplace",
+  "owner": {
+    "name": "antoprince001",
+    "email": "antoprince001@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "claude-sqlfluff-plugin",
+      "source": {
+        "source": "github",
+        "repo": "antoprince001/ai-coding-marketplace"
+      },
+      "description": "SQL tools",
+      "version": "1.0.0",
+      "author": {
+        "name": "antoprince001"
+      }
+    }
+  ]
+}
