@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mcp-server-sqlfluff": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/antoprince001/mcp-server-sqlfluff.git",
+        "mcp-server-sqlfluff"
+      ]
+    }
+  }
+}
