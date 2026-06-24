@@ -1,8 +1,32 @@
 {
   "name": "claude-sqlfluff-plugin",
   "description": "A plugin to integrate SQLFluff with Claude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Antony Prince"
-  }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/post-sql-write.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "mcpServers": {
+    "mcp-server-sqlfluff": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/antoprince001/mcp-server-sqlfluff.git",
+        "mcp-server-sqlfluff"
+      ]
+    }
+  },
+  "strict": false
 }
