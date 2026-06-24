@@ -1,0 +1,8 @@
+{
+  "name": "claude-sqlfluff-plugin",
+  "description": "A plugin to integrate SQLFluff with Claude",
+  "version": "1.0.0",
+  "author": {
+    "name": "Antony Prince"
+  }
+}
